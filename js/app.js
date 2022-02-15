@@ -19,7 +19,21 @@ for(let i=0;i<3;i++){
       
 
 }
+const searchBtn = document.getElementById("search-btn");
+const wrapForm = document.getElementById("wrap-form");
+const CloseSearchBtn = document.getElementById("CloseSearchBtn");
+searchBtn.addEventListener("click",()=>{
+    searchBtn.style.display="none";
+    wrapForm.style.display="flex"
+})
+CloseSearchBtn.addEventListener("click",()=>{
+    searchBtn.style.display="block"
+    wrapForm.style.display="none"
+})
 
+window.addEventListener("scroll",()=>{
+    document.getElementById("headerNih").classList.toggle("Bg-White-for-Header",window.scrollY>0)
+})
 
 
 

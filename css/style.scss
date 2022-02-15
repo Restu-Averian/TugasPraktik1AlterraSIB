@@ -1,0 +1,194 @@
+@import "color";
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+
+    .Bg-White-for-Header {
+        background-color: white;
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        max-width: 1000px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        .left-side {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .search-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 16px;
+                background-color: $kekblack-colorGitu;
+                border-radius: 50%;
+                cursor: pointer;
+                color: white;
+                margin-left: 20px;
+
+                i {
+                    font-size: 18px;
+                }
+            }
+
+            .wrap-form {
+                // display: flex;
+                align-items: center;
+                display: none;
+                margin-left: 40px;
+
+                input[type=search] {
+                    border-radius: 10px;
+                    padding: 16px 10px;
+                }
+
+                .close-icon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 16px 20px;
+                    border: 2px solid $kekblack-colorGitu;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    color: $kekblack-colorGitu;
+                    margin-left: 10px;
+                }
+            }
+        }
+
+        .right-side {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .cart-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 16px;
+                background-color: $kekblack-colorGitu;
+                border-radius: 50%;
+                cursor: pointer;
+                color: white;
+                margin-right: 20px;
+
+                i {
+                    position: relative;
+
+                    span {
+                        background-color: red;
+                        position: absolute;
+                        top: -20px;
+                        padding: 4px;
+                        border-radius: 50%;
+                        left: 22px;
+                    }
+                }
+
+            }
+
+            .akun-icon {
+                background-color: $orange-color;
+                padding: 15px 14px;
+                border-radius: 24px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    main {
+        width: 100%;
+        max-width: 1000px;
+        margin: 5em auto;
+
+        h2 {
+            display: inline-block;
+            background-color: $kekblack-colorGitu;
+            padding: 16px 26px;
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: white;
+        }
+
+        .courses {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .course {
+                border: 1px solid #BBBBBB;
+                width: 300px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                margin-right: 32px;
+
+                .course-img {
+                    height: 180px;
+                    background-image: url("https://alta.id/wp-content/uploads/elementor/thumbs/photo_2021-12-24_11-35-16-phyxopjvig0uxbyulwyeq0c3m7hui1dvz1jv97svnu.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                .course-detail {
+                    padding: 14px 16px;
+
+                    .course-type {
+                        font-size: 14px;
+                        color: #A1A1A1;
+                        letter-spacing: 0.2px;
+                        margin-bottom: 12px;
+                    }
+
+                    .course-title {
+                        font-weight: 600;
+                        letter-spacing: 0.4px;
+                        color: #404040;
+                    }
+
+                    hr {
+                        // width: 90%;
+                        margin: 20px auto;
+                    }
+
+                    .addcart-price {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        button {
+                            padding: 10px 18px;
+                            border: none;
+                            background-color: $orange-color;
+                            border-radius: 24px;
+                            cursor: pointer;
+                        }
+
+                        p {
+                            font-weight: 600;
+                            color: #404040;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

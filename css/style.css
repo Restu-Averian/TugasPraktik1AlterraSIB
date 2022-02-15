@@ -1,0 +1,246 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.container .Bg-White-for-Header {
+  background-color: white;
+}
+
+.container header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container header .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container header .left-side .search-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  background-color: #19345F;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  margin-left: 20px;
+}
+
+.container header .left-side .search-icon i {
+  font-size: 18px;
+}
+
+.container header .left-side .wrap-form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  margin-left: 40px;
+}
+
+.container header .left-side .wrap-form input[type=search] {
+  border-radius: 10px;
+  padding: 16px 10px;
+}
+
+.container header .left-side .wrap-form .close-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 20px;
+  border: 2px solid #19345F;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #19345F;
+  margin-left: 10px;
+}
+
+.container header .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container header .right-side .cart-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px;
+  background-color: #19345F;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  margin-right: 20px;
+}
+
+.container header .right-side .cart-icon i {
+  position: relative;
+}
+
+.container header .right-side .cart-icon i span {
+  background-color: red;
+  position: absolute;
+  top: -20px;
+  padding: 4px;
+  border-radius: 50%;
+  left: 22px;
+}
+
+.container header .right-side .akun-icon {
+  background-color: #f47522;
+  padding: 15px 14px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.container main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 5em auto;
+}
+
+.container main h2 {
+  display: inline-block;
+  background-color: #19345F;
+  padding: 16px 26px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.container main .courses {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container main .courses .course {
+  border: 1px solid #BBBBBB;
+  width: 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 32px;
+}
+
+.container main .courses .course .course-img {
+  height: 180px;
+  background-image: url("https://alta.id/wp-content/uploads/elementor/thumbs/photo_2021-12-24_11-35-16-phyxopjvig0uxbyulwyeq0c3m7hui1dvz1jv97svnu.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container main .courses .course .course-detail {
+  padding: 14px 16px;
+}
+
+.container main .courses .course .course-detail .course-type {
+  font-size: 14px;
+  color: #A1A1A1;
+  letter-spacing: 0.2px;
+  margin-bottom: 12px;
+}
+
+.container main .courses .course .course-detail .course-title {
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #404040;
+}
+
+.container main .courses .course .course-detail hr {
+  margin: 20px auto;
+}
+
+.container main .courses .course .course-detail .addcart-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container main .courses .course .course-detail .addcart-price button {
+  padding: 10px 18px;
+  border: none;
+  background-color: #f47522;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.container main .courses .course .course-detail .addcart-price p {
+  font-weight: 600;
+  color: #404040;
+}
+/*# sourceMappingURL=style.css.map */
